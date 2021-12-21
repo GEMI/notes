@@ -1,0 +1,6 @@
+// Git command to search for commits by text in commit messages, e.g. search by task number
+git show :/TASK-6517
+
+// Windows POWERSHELL command to find all empty files inside a directory
+PS C:\angular-app\src> Get-ChildItem -Path C:\angular-app\src -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 } | Select -ExpandProperty FullName | Add-Content -Path files-found.txt
+
